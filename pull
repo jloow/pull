@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# "Pull" a todo item, i.e., print it, by providing the item number.
+todo.sh command list | grep --color=never ^$(printf "%03d" ${@:2})
